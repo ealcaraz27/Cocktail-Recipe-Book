@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cocktail Recipe Search</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333333;
+            margin-top: 50px;
+        }
+
+        .search-container {
+            margin-top: 30px;
+        }
+
+        .search-input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cocktail Recipe Search</h1>
+    <div class="search-container">
+        <form action="find-recipe" method="GET">
+            <input type="text" id="search" name="search" class="search-input" placeholder="Cocktail recipes to add to Notion...">
+            <input type="submit" value="Search" class="search-button">
+            <input type="submit" value="Random Recipe" class="search-button" onclick="submitRandomForm()">
+        </form>
+    </div>
+
+    <script>
+        function submitRandomForm() {
+            var form = document.getElementById("searchForm");
+            var searchInput = document.getElementById("search");
+            searchInput.value = "Random";
+            form.submit();
+        }
+    </script>
+</body>
+</html>
