@@ -1,4 +1,4 @@
-# Notion-CocktailDB-Integration
+# Cocktail-Recipe-Book
 The following is an API integration of Notion and TheCocktailDB implementing Three-Legged OAuth where you are able to get cocktail recipes from TheCocktailDB, either random or by user input, that then adds them into your own Notion notebook you select.
 
 ## Requirements
